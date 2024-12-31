@@ -27,8 +27,9 @@ const About = () => {
   });
 
   return (
-    <div id="about" className="min-h-screen w-screen">
-      <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
+    <div id="about" className="min-h-screen w-screen  ">
+    <div className=" bg-[radial-gradient(circle,purple,transparent_80%)]">
+    <div className="relative mb-8 mt-36 flex flex-col items-center gap-5  ">
       <AnimatedTitle
           title="Hack<b>a</b>Nova"
           containerClass="mt-5 !text-orange-800  text-center "
@@ -57,6 +58,7 @@ const About = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

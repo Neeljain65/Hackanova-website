@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 import Textscroll from "./Text-Scrool";
+import Slider from "./Slider/Slider";
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -100,7 +101,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section className="bg-black ">
+  <section className="mt-5">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-center text-3xl   text-blue-50">
@@ -156,6 +157,7 @@ const Features = () => (
         
       </div>
     </div>
+    <Slider/>
   </section>
 );
 

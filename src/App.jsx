@@ -10,6 +10,7 @@ import { CanvasRevealEffectDemo } from "./components/Prizes";
 import Textscroll from "./components/Text-Scrool";
 import HorizontalScroll from "./components/Horizontal/HorizontalScroll";
 import Slider from "./components/Slider/Slider";
+import { BackgroundGradientAnimationDemo } from "./components/radientBg/BackGround";
 
 function App() {
   return (
@@ -22,8 +23,8 @@ function App() {
       <CanvasRevealEffectDemo/>
       
       <Features />
-      <Slider/>
       
+      {/* <BackgroundGradientAnimationDemo/> */}
       <Footer />
     </main>
   );
