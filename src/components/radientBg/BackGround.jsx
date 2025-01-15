@@ -1,10 +1,13 @@
 import React from "react";
 import { BackgroundGradientAnimation } from "../ui/BackgroundAnimation";
+import Contact from "../Contact";
 
 export function BackgroundGradientAnimationDemo() {
   return (
-    (<BackgroundGradientAnimation>
-     
-    </BackgroundGradientAnimation>)
+    (
+    <div className="absolute z-inset-0  text-white ">
+        <Contact/>
+      </div>
+    )
   );
 }

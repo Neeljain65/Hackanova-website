@@ -1,6 +1,7 @@
+import SpaceCraft from "./3d/spaceCraft";
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
-
+import { motion } from "framer-motion";
 const ImageClipBox = ({ src, clipClass }) => (
   <div className={clipClass}>
     <img src={src} />
@@ -9,40 +10,37 @@ const ImageClipBox = ({ src, clipClass }) => (
 
 const Contact = () => {
   return (
-    <div id="contact" className="my-20 min-h-96 w-screen  px-10">
-      <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
-        <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-96">
-          <ImageClipBox
-            src="/img/contact-1.webp"
-            clipClass="contact-clip-path-1"
-          />
-          <ImageClipBox
-            src="/img/contact-2.webp"
-            clipClass="contact-clip-path-2 lg:translate-y-40 translate-y-60"
-          />
-        </div>
+    <div id="contact" className="mt-20 min-h-96 w-screen bg-gradient-to-b from-black via-black to-orange-900 ">
+      <div className="relative rounded-lg  py-24 text-blue-50 sm:overflow-hidden">
+      
 
-        <div className="absolute -top-40 left-20 w-60 sm:top-1/2 md:left-auto md:right-10 lg:top-20 lg:w-80">
-          <ImageClipBox
-            src="/img/swordman-partial.webp"
-            clipClass="absolute md:scale-125"
-          />
-          <ImageClipBox
-            src="/img/swordman.webp"
-            clipClass="sword-man-clip-path md:scale-125"
-          />
-        </div>
-
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-row items-center justify-center gap-5 text-center">
          
-          <AnimatedTitle
-            title="let&#39;s b<b>u</b>ild the <br /> new era of <br /> g<b>a</b>ming t<b>o</b>gether."
-            className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
-          />
-
-          <Button title="contact us" containerClass="mt-10 cursor-pointer" />
+          <p className="text-xl">Still Got Questions</p>
+          <Button title="contact us" containerClass=" cursor-pointer" />
+        </div>
+        <div className="flex flex-col justify-center items-center mt-10" >
+         <AnimatedTitle title="Hackanova 4.0" />
+          <p className="text-center text-orange-500 text-lg mt-5">
+          Imagine. Believe. Achieve!
+          </p>
+          <p className="text-center text-lg mt-5">TCET</p>
+          <p className="text-center text-lg mt-5">
+            Mumbai, India
+          </p>
         </div>
       </div>
+      <footer className="w-screen  py-4 text-white bg-transparent">
+      <div className="container  flex flex-col justify-center gap-4 px-4 md:flex-row">
+      
+
+        <div className="flex justify-center text-center gap-4  md:justify-start">
+        © 2024 All rights reserved | Made with ❤ by the Hackanova Team
+        </div>
+
+        
+      </div>
+    </footer>
     </div>
   );
 };

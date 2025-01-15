@@ -79,9 +79,51 @@ body {
   .about-image {
     @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
   }
-
+  .planet-rings {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.854);
+    opacity: 0.2;
+  }
+  
+  .ring-1 {
+    width: 1500px;
+    height: 1500px;
+    animation: rotate 20s linear infinite;
+  }
+  
+  .ring-2 {
+    width: 400px;
+    height: 400px;
+    animation: rotate 30s linear infinite reverse;
+  }
+  
+  .ring-3 {
+    width: 500px;
+    height: 500px;
+    animation: rotate 40s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
   .animated-title {
      @apply flex flex-col gap-1 text-5xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];}
+ .animated-titleS {
+     @apply flex flex-col gap-1 text-3xl uppercase leading-[.8] text-white sm:px-32 md:text-[3rem];}
 
   .animated-word {
     @apply special-font font-zentry font-black opacity-0;

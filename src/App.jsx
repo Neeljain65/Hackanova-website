@@ -11,7 +11,7 @@ import Textscroll from "./components/Text-Scrool";
 import HorizontalScroll from "./components/Horizontal/HorizontalScroll";
 import Slider from "./components/Slider/Slider";
 import { BackgroundGradientAnimationDemo } from "./components/radientBg/BackGround";
-
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden bg-black">
@@ -24,8 +24,8 @@ function App() {
       
       <Features />
       
-      {/* <BackgroundGradientAnimationDemo/> */}
-      <Footer />
+      <Contact />
+      {/* <Footer /> */}
     </main>
   );
 }

@@ -39,26 +39,33 @@ function Timer() {
   return (
     <div className="flex items-center justify-center rounded-lg">
       <div className="p-6 text-center bg-clip-padding backdrop-filter bg-gray-600 backdrop-blur-lg bg-opacity-10 shadow-md rounded-lg border border-gray-100">
-        <h1 className="text-2xl font-bold mb-4">Registration Starts In</h1>
-        <div className="flex gap-4 justify-center ">
-          <div className="h-12 w-12 bg-white rounded-sm flex items-center justify-center text-lg font-bold">
-            {days}
+        <h1 className="text-2xl text-white font-bold mb-6">Registration Starts In</h1>
+        <div className="grid grid-cols-4 gap-4">
+          {/* Time Values */}
+          <div className="flex flex-col items-center">
+            <div className="h-12 w-12 bg-white rounded-sm flex items-center justify-center text-lg font-bold">
+              {days}
+            </div>
+            <div className="text-sm text-gray-500 mt-1">Days</div>
           </div>
-          <div className="h-12 w-12 bg-white rounded-sm flex items-center justify-center text-lg font-bold">
-            {hours}
+          <div className="flex flex-col items-center">
+            <div className="h-12 w-12 bg-white rounded-sm flex items-center justify-center text-lg font-bold">
+              {hours}
+            </div>
+            <div className="text-sm text-gray-500 mt-1">Hours</div>
           </div>
-          <div className="h-12 w-12 bg-white rounded-sm flex items-center justify-center text-lg font-bold">
-            {minutes}
+          <div className="flex flex-col items-center">
+            <div className="h-12 w-12 bg-white rounded-sm flex items-center justify-center text-lg font-bold">
+              {minutes}
+            </div>
+            <div className="text-sm text-gray-500 mt-1">Minutes</div>
           </div>
-          <div className="h-12 w-12 bg-white rounded-sm flex items-center justify-center text-lg font-bold">
-            {secs}
+          <div className="flex flex-col items-center">
+            <div className="h-12 w-12 bg-white rounded-sm flex items-center justify-center text-lg font-bold">
+              {secs}
+            </div>
+            <div className="text-sm text-gray-500 mt-1">Seconds</div>
           </div>
-        </div>
-        <div className="flex gap-4 mt-2">
-          <div className="text-sm text-gray-500">Days</div>
-          <div className="text-sm text-gray-500">Hours</div>
-          <div className="text-sm text-gray-500">Minutes</div>
-          <div className="text-sm text-gray-500">Seconds</div>
         </div>
       </div>
     </div>

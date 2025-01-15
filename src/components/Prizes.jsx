@@ -44,14 +44,14 @@ const Card = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{ height }}
-      className="border bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-purple-600 via-gray -600 to-black bg-black border-black/[0.2] group/canvas-card flex items-center justify-center rounded-xl dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative  relative">
+      className="border-2 border-white bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-purple-600 via-gray -600 to-black bg-black border-black/[0.2] group/canvas-card flex items-center justify-center rounded-xl   max-w-sm w-full mx-auto p-4 relative  ">
       
       <AnimatePresence>
         {hovered && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="h-full w-full absolute inset-0">
+            className="h-full w-full absolute rounded-xl inset-0">
             {children}
           </motion.div>
         )}
@@ -62,7 +62,7 @@ const Card = ({
           {icon}
         </div>
         <h2
-          className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+          className=" dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
       </div>
