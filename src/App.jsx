@@ -12,13 +12,14 @@ import HorizontalScroll from "./components/Horizontal/HorizontalScroll";
 import Slider from "./components/Slider/Slider";
 import { BackgroundGradientAnimationDemo } from "./components/radientBg/BackGround";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import CardGallery from "./components/Bento";
 function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden bg-black">
       <NavBar />
       
       <About />
-      
+      {/* <CardGallery /> */}
       <TimelineDemo/>
       <CanvasRevealEffectDemo/>
       
