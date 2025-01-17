@@ -27,7 +27,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
           ease: "power2.inOut",
           stagger: 0.02,
         },
-        0
+        0,
       );
     }, containerRef);
 
@@ -75,7 +75,7 @@ export const SAnimatedTitle = ({ title, containerClass }) => {
           ease: "power2.inOut",
           stagger: 0.02,
         },
-        0
+        0,
       );
     }, containerRef);
 

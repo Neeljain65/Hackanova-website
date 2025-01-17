@@ -4,10 +4,8 @@ import Contact from "../Contact";
 
 export function BackgroundGradientAnimationDemo() {
   return (
-    (
     <div className="absolute z-inset-0  text-white ">
-        <Contact/>
-      </div>
-    )
+      <Contact />
+    </div>
   );
 }

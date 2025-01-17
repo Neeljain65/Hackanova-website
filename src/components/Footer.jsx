@@ -11,13 +11,9 @@ const Footer = () => {
   return (
     <footer className="w-screen  py-4 text-white bg-transparent">
       <div className="container  flex flex-col justify-center gap-4 px-4 md:flex-row">
-      
-
         <div className="flex justify-center text-center gap-4  md:justify-start">
-        © 2024 All rights reserved | Made with ❤ by the Hackanova Team
+          © 2024 All rights reserved | Made with ❤ by the Hackanova Team
         </div>
-
-        
       </div>
     </footer>
   );

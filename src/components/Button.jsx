@@ -1,14 +1,15 @@
 import clsx from "clsx";
-import {motion } from "motion/react"
+import { motion } from "motion/react";
 const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
   return (
-    <motion.button  whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.95 }}
-    onHoverStart={() => console.log('hover started!')}
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+      onHoverStart={() => console.log("hover started!")}
       id={id}
       className={clsx(
         "group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black",
-        containerClass
+        containerClass,
       )}
     >
       {leftIcon}

@@ -69,7 +69,9 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
       /> */}
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
-          <h1 className="bento-title special-font bg-gradient-to-r from-orange-600 via-orange-500 to-indigo-400 inline-block text-transparent bg-clip-text">{title}</h1>
+          <h1 className="bento-title special-font bg-gradient-to-r from-orange-600 via-orange-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+            {title}
+          </h1>
           {description && (
             <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
           )}
@@ -105,15 +107,11 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-center text-3xl   text-blue-50">
-         Meet Our Sponsors
-        
+          Meet Our Sponsors
         </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-        
-        </p>
+        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50"></p>
       </div>
 
-   
       <div className="grid  w-full lg:grid-cols-3 md:gap-7">
         <BentoTilt className="bento-tilt_1  md:col-span-1 ">
           <BentoCard
@@ -153,11 +151,9 @@ const Features = () => (
             isComingSoon
           />
         </BentoTilt>
-
-        
       </div>
     </div>
-    <Slider/>
+    <Slider />
   </section>
 );
 

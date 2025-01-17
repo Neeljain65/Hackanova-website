@@ -12,7 +12,11 @@ function Card({ id, title, category, theme, onClick }) {
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
-            <img className="size-full bg-cover bg-center" src={`images/${id}.jpg`} alt="" />
+            <img
+              className="size-full bg-cover bg-center"
+              src={`images/${id}.jpg`}
+              alt=""
+            />
           </motion.div>
           <motion.div
             className="title-container"
@@ -31,7 +35,12 @@ function List({ selectedId, onSelect }) {
   return (
     <ul className="card-list">
       {items.map((card) => (
-        <Card key={card.id} {...card} onClick={onSelect} isSelected={card.id === selectedId} />
+        <Card
+          key={card.id}
+          {...card}
+          onClick={onSelect}
+          isSelected={card.id === selectedId}
+        />
       ))}
     </ul>
   );
@@ -57,7 +66,11 @@ function Item({ id, onClose }) {
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
-            <img className="size-full bg-cover bg-center" src={`images/${id}.jpg`} alt="" />
+            <img
+              className="size-full bg-cover bg-center"
+              src={`images/${id}.jpg`}
+              alt=""
+            />
           </motion.div>
           <motion.div
             className="title-container"
@@ -91,15 +104,13 @@ export default function CardGallery() {
   };
 
   return (
-    
-    
-      <div className="container z-10 relative before:absolute before:bg-gradient-to-b from-purple-600 via-purple-950 to-black  before:-inset-2 before:-z-10 before:blur-3xl before:round-[inherit]">
-
+    <div className="container z-10 relative before:absolute before:bg-gradient-to-b from-purple-600 via-purple-950 to-black  before:-inset-2 before:-z-10 before:blur-3xl before:round-[inherit]">
       <List selectedId={selectedId} onSelect={handleSelect} />
       <AnimatePresence>
-        {selectedId && <Item id={selectedId} key="item" onClose={handleClose} />}
-      </AnimatePresence> 
-     
+        {selectedId && (
+          <Item id={selectedId} key="item" onClose={handleClose} />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -12,14 +12,14 @@ function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden bg-black">
       <NavBar />
-      
+
       <About />
       {/* <CardGallery /> */}
-      <TimelineDemo/>
-      <CanvasRevealEffectDemo/>
-      
+      <TimelineDemo />
+      <CanvasRevealEffectDemo />
+
       <Features />
-      
+
       <Contact />
       {/* <Footer /> */}
     </main>
