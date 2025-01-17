@@ -150,11 +150,14 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    height: 420px;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
   }
   
-  .open .card-image-container,
+  .open .card-image-container{
+
+    aspect-ratio: 16/9;
+  }
   .open .title-container {
     z-index: 1;
   }

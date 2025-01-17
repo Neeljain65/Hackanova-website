@@ -3,9 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
   import { motion } from "framer-motion";
 import AnimatedTitle, { SAnimatedTitle } from "./AnimatedTitle";
-import Timer from "./Timer";
-import Droid from "./3d/droid";
-import SpaceCraft from "./3d/spaceCraft";
+
 import CardGallery from "./Bento";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -42,7 +40,7 @@ const About = () => {
     <div id="about" className=" w-screen">
      
         <div className="z- mb-12 mt-36 flex flex-col items-center gap-5  ">
-       <div className="z-10 before:bg-[radial-gradient(50%_100%,#8E24AA,transparent)] relative before:absolute before:inset-[-10%_-2%] before:-z-10 before:blur-3xl before:rounded-t-full">
+       {/* <div className="z-10 before:bg-[radial-gradient(50%_100%,#8E24AA,transparent)] relative before:absolute before:inset-[-10%_-2%] before:-z-10 before:blur-3xl before:rounded-t-full"> */}
        <SAnimatedTitle
             title="18-19th J<b>A</b>NUARY 2025"
             containerClass="mt-5 !text-white   text-center"
@@ -52,7 +50,7 @@ const About = () => {
             containerClass="mt-5 !text-white   text-center"
           />
 
-       </div>
+       {/* </div> */}
      
         </div>
 <CardGallery/>

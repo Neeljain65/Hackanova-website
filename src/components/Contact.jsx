@@ -1,4 +1,4 @@
-import SpaceCraft from "./3d/spaceCraft";
+
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
 import { motion } from "framer-motion";

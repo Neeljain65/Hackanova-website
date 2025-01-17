@@ -12,7 +12,7 @@ function Card({ id, title, category, theme, onClick }) {
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
-            <img className="card-image" src={`images/${id}.jpg`} alt="" />
+            <img className="size-full bg-cover bg-center" src={`images/${id}.jpg`} alt="" />
           </motion.div>
           <motion.div
             className="title-container"
@@ -57,7 +57,7 @@ function Item({ id, onClose }) {
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
-            <img className="card-image" src={`images/${id}.jpg`} alt="" />
+            <img className="size-full bg-cover bg-center" src={`images/${id}.jpg`} alt="" />
           </motion.div>
           <motion.div
             className="title-container"
